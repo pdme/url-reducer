@@ -2,7 +2,7 @@ import { T } from "ramda";
 
 const validator = (validateConfig: {
   [key: string]: (value: any) => boolean;
-}) => (obj: object) =>
+}) => (obj: { [key: string]: any }) =>
   Object.entries(obj).reduce((acc, [key, value]) => {
     const validator = validateConfig[key] || T;
 
