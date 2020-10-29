@@ -10,7 +10,19 @@ Keep part of your redux store in the url.
 
 ## Example
 
-For example, a reducer in `url.js`:
+For example, you add a `url` field to your redux state that holds the part of your state that you want to persist in the url:
+
+```
+{
+  url: {
+    counter: 0
+  },
+  
+  ...the rest of your state
+}
+```
+
+The reducer for this part of your state, which might live in `url.js` and which you might include in `combineReducers`, could look something like this:
 
 ```
 import urlReducer from "url-reducer";
