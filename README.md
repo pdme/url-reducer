@@ -4,6 +4,10 @@ Keep part of your redux store in the url.
 
 `url-reducer` exposes a higher order function that keeps a reducer's state in the url's query params.
 
+## Installation
+
+`yarn add url-reducer` or `npm install url-reducer`
+
 ## Example
 
 For example, a reducer in `url.js`:
