@@ -1,0 +1,22 @@
+{
+  "name": "url-reducer",
+  "version": "0.0.1",
+  "description": "Store part of your redux state in the url",
+  "main": "dist/index.js",
+  "author": "Philip Ebels",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn tsc"
+  },
+  "dependencies": {
+    "@types/ramda": "^0.27.31",
+    "history": "^5.0.0",
+    "qs": "^6.9.4",
+    "ramda": "^0.27.1",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@types/qs": "^6.9.5",
+    "typescript": "^4.0.5"
+  }
+}
