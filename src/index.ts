@@ -44,9 +44,9 @@ const urlReducer = function <T>(
     const nextState = reducer(state, action);
 
     if (!Object.is(state, nextState)) {
-      const nextSearch = stringify(nextState);
+      const nextSearch = stringify(nextState, { addQueryPrefix: true });
 
-      history.push({ search: `?${nextSearch}` });
+      history.push({ search: nextSearch });
     }
 
     return nextState;
